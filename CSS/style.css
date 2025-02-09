@@ -1,0 +1,105 @@
+/* CSS/style.css (Base Styles) */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333; /* Dark gray text color for better contrast */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Add some padding to the container */
+}
+
+h1 {
+    color: #2c3e50; /* Darker blue heading color */
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer, more modern shadow */
+    transition: transform 0.2s ease-in-out; /* Add transition for hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Move card up slightly on hover */
+}
+
+h2 {
+    color: #3498db; /* Brighter blue for project titles */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.description {
+    color: #666; /* Slightly lighter gray for descriptions */
+    margin-bottom: 15px;
+}
+
+pre {
+    background: #f8f9fa; /* Very light gray for code blocks */
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto; /* Allow horizontal scrolling if code is too wide */
+    white-space: pre-wrap; /* Allow code to wrap to the next line */
+    font-family: monospace; /* Use a monospace font for code */
+}
+
+
+/* CSS/medium.css (Medium Screen Styles - Example: Tablets) */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px; /* Increase padding on medium screens */
+    }
+
+    .project-card {
+        display: flex; /* Arrange project cards in a row */
+        flex-direction: column; /* Stack elements vertically within cards */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .project-card h2 {
+        margin-bottom: 5px; /* Reduce margin below title */
+    }
+}
+
+
+/* CSS/large.css (Large Screen Styles - Example: Desktops) */
+@media (min-width: 992px) {
+    .container {
+        padding: 0 60px; /* Increase padding on large screens */
+    }
+
+    .project-card {
+        flex-direction: row; /* Arrange project cards in a row */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    .project-card h2 {
+        margin-right: 20px; /* Add space between title and description */
+    }
+
+    .project-card .description {
+        flex: 1; /* Allow description to take up available space */
+    }
+
+    .project-card pre {
+        margin-left: 20px; /* Add space before code block */
+    }
+}
+
+
+/* CSS/normalize.css */
+/*  Normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*  Resets styles across browsers.  Include this *before* your custom styles. */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration-style:dotted}b,strong{font-weight:bolder}small{font-size:80%}img{border-style:none}svg{overflow:hidden}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],[type=button],button{appearance:none}::-webkit-file-upload-button{appearance:none}:-moz-focusring{outline:ButtonText dotted 1px}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button{height:auto}[type=search]{appearance:textfield;outline-offset:-2px}::-webkit-inner-spin-button,::-webkit-search-cancel-button{appearance:none}table{border-collapse:collapse;border-spacing:0}thead{vertical-align:bottom}td,th{padding:0}
